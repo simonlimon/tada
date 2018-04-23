@@ -15,4 +15,4 @@ optional arguments:
   -t, --trace      leave trace of animation
 ```
 
-![screenshot]: (/screenshot.png)
+![screenshot](/screenshot.png)
