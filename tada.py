@@ -174,11 +174,7 @@ def animate_network(k=2, leave_trace=False, speed=10):
     n.states[-1] = 'g'
     while n.states[0] != '!':
         sleep(1.0/speed)
-<<<<<<< HEAD
         n.print_states(leave_trace)
-=======
-        n.print_states()
->>>>>>> 0dfe9187c49585f60008d58287047b42c33fb90c
         n.update()
     n.print_states()
 
