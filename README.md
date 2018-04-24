@@ -11,7 +11,7 @@ positional arguments:
 
 optional arguments:
   -h, --help       show this help message and exit
-  -s N, --speed N  animation speed, defaults to 3
+  -s N, --speed N  animation speed, defaults to 10
   -t, --trace      leave trace of animation
 ```
 

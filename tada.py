@@ -192,7 +192,7 @@ def main():
     parser = argparse.ArgumentParser(description='Animate a tada! network')
     parser.add_argument('k', type=int, help='network size')
     parser.add_argument('-s', '--speed', default=10, type=int,
-                        help='animation speed, defaults to 3', metavar='N')
+                        help='animation speed, defaults to 10', metavar='N')
     parser.add_argument('-t', '--trace', action='store_true',
                         help='leave trace of animation')
     args = parser.parse_args()
