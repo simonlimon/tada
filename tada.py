@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+import signal
+import sys
 import cursor
 import argparse
 from random import randint
@@ -181,6 +183,11 @@ def animate_network(k=2, leave_trace=False, speed=10):
     cursor.show()
 
 
+def signal_handler(signal, frame):
+    cursor.show()
+    sys.exit(0)
+
+
 def main():
     parser = argparse.ArgumentParser(description='Animate a tada! network')
     parser.add_argument('k', type=int, help='network size')
@@ -189,6 +196,7 @@ def main():
     parser.add_argument('-t', '--trace', action='store_true',
                         help='leave trace of animation')
     args = parser.parse_args()
+    signal.signal(signal.SIGINT, signal_handler)
     animate_network(args.k, args.trace, args.speed)
 
 
